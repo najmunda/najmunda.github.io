@@ -1,2 +1,2 @@
 # najmunda.github.io
-Najmunda's portofolio.
+Najmunda's github page repo.
