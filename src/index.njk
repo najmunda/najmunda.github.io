@@ -1,0 +1,48 @@
+---
+layout: base
+title: Welcome
+---
+
+
+<div class="basis-[75vh] shrink-0 flex flex-col md:flex-row items-stretch gap-[inherit] border-[inherit]">
+    <div class="flex-1 flex justify-center items-center overflow-hidden bg-cover bg-center bg-[url(/assets/images/profile.webp)] border border-[inherit] rounded-lg">
+    </div>
+    <div class="md:flex-1 flex flex-col justify-center gap-[inherit]">
+        <h2 class="text-6xl md:text-7xl font-medium">Najmunda Z.A.</h2>
+        <p class="text-wrap">I'm a Computer Science graduate who currently searching junior web-dev internship/job chances while deepening web-dev and built some personal project that (I hope) can be benefical for me & others!</p>
+    </div>
+</div>
+{% for project in collections.project %}
+<div class="basis-[75vh] shrink-0 flex items-stretch gap-[inherit] border-[inherit]">
+    <div class="flex-1 flex flex-col gap-[inherit] justify-end {{ 'items-end' if loop.index%2 != 0 else 'items-start' }} bg-[url({{ project.data.sc_mobile }})] md:bg-[url({{ project.data.sc_desktop }})] border border-[inherit] bg-cover bg-top rounded-lg">
+        <div class="p-4 flex flex-col gap-[inherit] {{ 'items-end text-right border-l' if loop.index%2 != 0 else 'items-start text-left border-r' }} bg-sky-800 border-[inherit] border-t rounded-lg">
+            <h2 class="text-4xl md:text-5xl font-medium md:text-nowrap">{{ project.data.title }}</h2>
+            <p class="text-sm">{{ project.data.description }}</p>
+            <div class="flex items-center gap-[inherit]">
+                {% if project.data.repo %}
+                <a href="{{ project.data.repo }}" target="_blank" rel="noopener noreferrer"><i class="bi bi-github text-xl"></i></a>
+                {% endif %}
+                {% if project.data.link %}
+                <a href="{{ project.data.link }}" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right text-xl"></i></a>
+                {% endif %}
+                <!-- <a href="{{ project.url }}" class="hover:underline font-bold">Read more..</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+<div class="basis-[25vh] shrink-0 grow-1 flex flex-col gap-[inherit] border-[inherit]">
+    <div class="flex flex-col items-center gap-[inherit]">
+        <h2 class="text-6xl font-medium">Courses</h2>
+        <p class="text-sm">Course that I've join so far</p>
+    </div>
+    <ul class="flex gap-[inherit] list-none overflow-x-auto scroll-smooth border-[inherit]">
+    {% for course in courses %}
+        <li class="grow-0 shrink-0 basis-[75dvw] md:basis-[50dvw] lg:basis-[33dvw] xl:basis-[25dvw] 2xl:basis-[20dvw] h-fit flex flex-col gap-1 p-4 bg-sky-800 border border-[inherit] rounded-lg">
+            <a href="{{ course.url }}" class="text-xl hover:underline" target="_blank" rel="noopener noreferrer">{{ course.title }} <i class="m-1 bi bi-box-arrow-up-right"></i></a>
+            <p class="text-sm font-light">by {{ course.provider }}</p>
+            <p class="break-normal">{{ course.description }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+</div>

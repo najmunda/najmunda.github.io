@@ -1,0 +1,27 @@
+{
+  "name": "najmunda-did",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all -p dev:*",
+    "build": "npm-run-all -p build:*",
+    "build-ghpages": "npx @tailwindcss/cli -i ./src/assets/css/tailwind.css -o ./_site/assets/css/tailwind.css && npx @11ty/eleventy --pathprefix=/najmunda-did/",
+    "dev:11ty": "eleventy --serve",
+    "dev:css": "npx @tailwindcss/cli -i ./src/assets/css/tailwind.css -o ./_site/assets/css/tailwind.css --watch",
+    "build:11ty": "npx @11ty/eleventy",
+    "build:css": "npx @tailwindcss/cli -i ./src/assets/css/tailwind.css -o ./_site/assets/css/tailwind.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.2",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^4.1.2"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

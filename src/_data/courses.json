@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Menjadi React Web Developer Expert",
+        "provider": "Dicoding",
+        "url": "https://www.dicoding.com/certificates/N9ZO9W2KRXG5",
+        "description": "Learned to write consistent and clean code with linter and Clean Code principles, manage application state using Redux, perform automated testing from unit to end-to-end, deploy React apps with CI/CD, and explore the React ecosystem including Next.js, Storybook, and Styled Components." 
+    },
+    {
+        "title": "Belajar Fundamental Aplikasi Web dengan React",
+        "provider": "Dicoding",
+        "url": "https://www.dicoding.com/certificates/KEXL7NE5YXG2",
+        "description": "Learned Property Validation, React Router, Component Lifecycle, React Context, React Hooks by reading and creating a web app." 
+    },
+    {
+        "title": "Belajar Membuat Aplikasi Web dengan React",
+        "provider": "Dicoding",
+        "url": "https://www.dicoding.com/certificates/1OP84NQQ1ZQK",
+        "description": "Learned basic of react, stateful and reusable component by reading and creating a web app."
+    },
+    {
+        "title": "Belajar Dasar Pemrograman JavaScript",
+        "provider": "Dicoding",
+        "url": "https://www.dicoding.com/certificates/KEXL7DDJMXG2",
+        "description": "Learned to write clean JavaScript code, use Object-Oriented Programming, apply Functional Programming, handle asynchronous processes, manage data structures, and organize code using modules."
+    },
+    {
+        "title": "Belajar Dasar Pemrograman Web",
+        "provider": "Dicoding",
+        "url": "https://www.dicoding.com/certificates/JLX14V4V6X72",
+        "description": "Learned to build structured web pages using HTML, apply semantic elements and attributes, style pages using CSS, implement responsive layouts with Flexbox, and create a simple website project."
+    },
+    {
+        "title": "Belajar Membuat Front-End Web untuk Pemula",
+        "provider": "Dicoding",
+        "url": "https://www.dicoding.com/certificates/0LZ04GDD0P65",
+        "description": "Learned to manipulate the DOM using JavaScript, create interactivity with events, and store data in the browser using Web Storage API."
+    }
+]
