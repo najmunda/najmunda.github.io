@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "npm-run-all -p dev:*",
     "build": "npm-run-all -p build:*",
-    "build-ghpages": "npx @tailwindcss/cli -i ./src/assets/css/tailwind.css -o ./_site/assets/css/tailwind.css && npx @11ty/eleventy --pathprefix=/najmunda.github.io/",
+    "build-ghpages": "npx @tailwindcss/cli -i ./src/assets/css/tailwind.css -o ./_site/assets/css/tailwind.css && npx @11ty/eleventy",
     "dev:11ty": "eleventy --serve",
     "dev:css": "npx @tailwindcss/cli -i ./src/assets/css/tailwind.css -o ./_site/assets/css/tailwind.css --watch",
     "build:11ty": "npx @11ty/eleventy",
