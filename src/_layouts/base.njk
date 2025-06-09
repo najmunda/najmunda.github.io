@@ -13,28 +13,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <title>{{title}} | By Najmunda</title>
+    <title>{{title}} Portofolio | Najmunda</title>
   </head>
   <body class="h-dvh container mx-auto flex flex-col items-stretch bg-sky-800 text-white border-white scroll-smooth">
     <header class="px-4 py-2 w-full flex justify-between items-center gap-4 relative">
       <img src="/assets/images/logo.svg" class="size-50 absolute -left-10 rotate-30 hover:rotate-90 transition-transform drop-shadow-2xl" alt="">
       <hr class="flex-1 border-2 rounded-full border-white" />
       <ul class="flex gap-2">
-          <li><a href="/">Web-Dev Portofolio</a></li>
+          <li><a href="/">{{title}} Portofolio</a></li>
       </ul>
     </header>
     <main class="flex flex-col items-stretch gap-4 p-4 mx-2 border-2 border-[inherit] rounded-lg">
       {{content | safe}}
     </main>
-    <footer class="px-4 py-2 w-full flex justify-between items-center gap-4">
-      <p class="uppercase font-bold text-sm">Let's Connect</p>
+    <footer class="p-4 w-full flex justify-between items-center gap-4">
       <hr class="flex-1 border-2 rounded-full border-white" />
-      <ul class="flex justify-center gap-4 text-2xl">
-          <li><a href="mailto:najmundaakmal@gmail.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope-at"></i></a></li>
-          <li><a href="https://github.com/najmunda" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a></li>
-          <li><a href="https://linkedin.com/in/najmunda/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a></li>
-          <li><a href="https://x.com/najmunda" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a></li>
-      </ul>
     </footer>
   </body>
 </html>
