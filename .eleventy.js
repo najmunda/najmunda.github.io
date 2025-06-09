@@ -7,6 +7,7 @@ export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/images");
   eleventyConfig.addPassthroughCopy("src/assets/site.webmanifest");
   return {
+    pathPrefix: "/",
     dir: {
       "input": "src",
       "data": "_data",
